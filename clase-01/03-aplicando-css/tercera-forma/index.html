@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando css tercera forma</title>
+    <link rel="stylesheet" href="/clase-01/03-aplicando-css/style.css">
+    <link rel="stylesheet" href="/clase-01/03-aplicando-css/tercera-forma/style2.css">
+
+    <style>
+        
+
+        h3 {
+            color: blue;
+            background: mediumpurple;
+
+        }
+    </style>
+</head>
+
+<!-- 3. forma de aplicar css
+ 
+Usted puede decir profe pero la etiqueta esta en h3 y abajo hay una h2
+
+pero estoy llamando por la clave de la equiqueta
+
+se llama agregar estilo a traves de atributos y esto tiene mas prioridad la maxima prioriad es por clave
+
+pero realemente esto no lo recomiendo
+
+porque conforme el proyecto va creciendo voy saturando mi html de informaicon
+
+Entonces debemos modularizar el codigo crear una hoja de css y relacionarlo 
+Es una buena practica-->
+
+<body>
+    <h1>Titulo de un articulo</h1>
+    <p>La descripcion de un articulo</p>
+    <!--2-->
+    <h1>Segundo encabezado</h1>
+    <h2>Este titulo no tiene estilo</h2>
+
+    <!--3-->
+    <h3>Este elemento h3 tiene estilo </h3>
+
+<!--primero va esto-->
+    <h2 style="color: blue;">Este titulo si tiene estilo</h2>
+
+
+</body>
+
+</html>

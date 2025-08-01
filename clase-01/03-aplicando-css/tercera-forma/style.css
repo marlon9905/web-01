@@ -1,0 +1,10 @@
+h1{
+   /* 1 */
+    color: red;
+    /* 2 */
+    background: green;
+}
+h2{
+    color: fuchsia;
+    background: chocolate;
+}

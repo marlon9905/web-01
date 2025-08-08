@@ -1,0 +1,62 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    background-color: #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Estilo para el contenedor principal */
+main {
+    display: block; /* Cambiado a block para apilar elementos verticalmente */
+}
+
+/* Estilo para la sección de contenido */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el aside (publicidad) */
+aside {
+    background-color: #ddd;
+    padding: 20px;
+    /* puede usar px o vw vistas de  */
+    margin-top: 22vw;
+    
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

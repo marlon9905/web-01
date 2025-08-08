@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Declara que este es un documento HTML5, el estándar moderno para páginas web -->
+<html lang="es"> <!-- Elemento raíz de la página, con idioma español para accesibilidad -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres para soportar letras y símbolos como la ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva: ajusta el ancho al dispositivo y establece el zoom inicial en 1 -->
+    <title>Ejemplo de Layout con HTML y CSS</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="/08-pagina-compleja-maquetacion/styles.css"> <!-- Conecta este archivo HTML con el archivo CSS para los estilos -->
+</head>
+<body> <!-- Contiene todo el contenido visible de la página web -->
+    <!-- Encabezado: contiene el logotipo y el menú -->
+    <header class="header"> <!-- Etiqueta semántica para el encabezado, con clase "header" para aplicar estilos -->
+        <div class="logo">Mi Sitio</div> <!-- Div con el logotipo del sitio, clase "logo" para estilizar -->
+        <nav class="nav"> <!-- Etiqueta semántica para la navegación, con clase "nav" -->
+            <ul class="nav__list"> <!-- Lista desordenada para los enlaces del menú, con clase para estilizar -->
+                <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li> <!-- Elemento de menú con enlace -->
+                <li class="nav__item"><a href="#" class="nav__link">Acerca</a></li> <!-- Segundo enlace del menú -->
+                <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li> <!-- Tercer enlace del menú -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal: título y tarjetas -->
+    <main class="main"> <!-- Etiqueta semántica para el contenido principal, con clase "main" -->
+        <h1>Nuestro Contenido</h1> <!-- Título principal de la página, nivel 1 -->
+        <div class="card-grid"> <!-- Contenedor para la cuadrícula de tarjetas, con clase "card-grid" -->
+            <div class="card"> <!-- Primera tarjeta, con clase "card" para estilizar -->
+                <h2>Tarjeta 1</h2> <!-- Título de la tarjeta, nivel 2 -->
+                <p>Este es un ejemplo de una tarjeta con contenido. Puedes incluir texto, imágenes o cualquier otro elemento.</p> <!-- Párrafo con descripción -->
+            </div>
+            <div class="card"> <!-- Segunda tarjeta -->
+                <h2>Tarjeta 2</h2> <!-- Título de la tarjeta -->
+                <p>Las tarjetas son ideales para mostrar información organizada, como productos o servicios.</p> <!-- Descripción -->
+            </div>
+            <div class="card"> <!-- Tercera tarjeta -->
+                <h2>Tarjeta 3</h2> <!-- Título de la tarjeta -->
+                <p>Usamos CSS Grid para crear una cuadrícula responsiva que se adapta a diferentes tamaños de pantalla.</p> <!-- Descripción -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer"> <!-- Etiqueta semántica para el pie de página, con clase "footer" -->
+        <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p> <!-- Párrafo con texto de derechos, usando el símbolo de copyright -->
+    </footer>
+</body>
+</html>

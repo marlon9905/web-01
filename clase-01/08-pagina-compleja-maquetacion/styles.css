@@ -1,0 +1,106 @@
+/* Reinicio de estilos para que la página se vea igual en todos los navegadores */
+* {
+    margin: 0; /* Quita los márgenes predeterminados (espacios exteriores) de todos los elementos */
+    padding: 0; /* Quita el padding predeterminado (espacios interiores) de todos los elementos */
+    box-sizing: border-box; /* Hace que el ancho y alto de un elemento incluyan el borde y el padding, no solo el contenido */
+}
+
+/* Estilos del cuerpo de la página (todo el documento) */
+body {
+    font-family: Arial, sans-serif; /* Usa la fuente Arial, con una alternativa genérica si Arial no está disponible */
+    line-height: 1.6; /* Aumenta el espaciado entre líneas de texto para que sea más fácil de leer */
+    color: #333; /* Color del texto en gris oscuro (#333333) para buena legibilidad */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la pantalla (vh = viewport height) */
+    display: flex; /* Usa Flexbox para organizar los elementos hijos (header, main, footer) como una columna */
+    flex-direction: column; /* Coloca los elementos en una columna vertical, uno debajo del otro */
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #2c3e50; /* Fondo azul oscuro para el encabezado */
+    color: white; /* Texto blanco para que contraste con el fondo */
+    padding: 1rem; /* Espacio interior de 1rem (16px, basado en la fuente raíz) */
+    display: flex; /* Usa Flexbox para alinear el logotipo y la navegación horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos (logo y menú) se reorganicen en varias líneas si no caben */
+    justify-content: space-between; /* Coloca el logotipo a la izquierda y la navegación a la derecha */
+    align-items: center; /* Centra los elementos verticalmente dentro del encabezado */
+    gap: 1rem; /* Espacio de 1rem entre el logotipo y la navegación si se reorganizan's */
+}
+
+/* Estilos del logotipo */
+.logo {
+    font-size: clamp(1.2rem, 4vw, 1.5rem); /* Tamaño de fuente adaptable: mínimo 1.2rem (19.2px), preferido 4% del ancho de la pantalla, máximo 1.5rem (24px) */
+    font-weight: bold; /* Hace el texto del logotipo más grueso (negrita) */
+}
+
+/* Estilos de la lista de navegación */
+.nav__list {
+    display: flex; /* Usa Flexbox para alinear los elementos del menú horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos del menú se apilen en varias líneas si no caben */
+    list-style: none; /* Quita los puntos o números de la lista */
+    gap: 1rem; /* Espacio de 1rem entre cada elemento del menú */
+}
+
+/* Estilos de cada elemento del menú */
+.nav__item {
+    margin: 0.5rem; /* Espacio de 0.5rem (8px) alrededor de cada elemento para pantallas pequeñas */
+}
+
+/* Estilos de los enlaces del menú */
+.nav__link {
+    color: white; /* Texto blanco para contraste */
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+    font-size: clamp(0.9rem, 3vw, 1rem); /* Tamaño de fuente adaptable: mínimo 0.9rem (14.4px), preferido 3% del ancho de la pantalla, máximo 1rem (16px) */
+}
+
+/* Efecto al pasar el ratón por los enlaces */
+.nav__link:hover {
+    text-decoration: underline; /* Añade un subrayado cuando el ratón pasa por encima */
+}
+
+/* Estilos del contenido principal */
+.main {
+    max-width: 90%; /* Limita el ancho al 90% de la pantalla para que se adapte a cualquier tamaño */
+    margin: 2rem auto; /* Centra el contenedor horizontalmente (auto) con 2rem (32px) de margen arriba y abajo */
+    padding: 0 1rem; /* Espacio lateral de 1rem para que el contenido no toque los bordes */
+    flex-grow: 1; /* Hace que el main crezca para llenar el espacio disponible, empujando el footer al final */
+}
+
+/* Estilos del título principal */
+.main h1 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 2rem; /* Espacio de 2rem (32px) debajo del título */
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Tamaño adaptable: mínimo 1.5rem (24px), preferido 5% del ancho de la pantalla, máximo 2rem (32px) */
+}
+
+/* Cuadrícula de tarjetas */
+.card-grid {
+    display: grid; /* Activa CSS Grid para crear una cuadrícula de tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea columnas responsivas: mínimo 250px por columna, máximo ocupa el espacio disponible (1fr = 1 fracción) */
+    gap: 1.5rem; /* Espacio de 1.5rem (24px) entre las tarjetas */
+}
+
+/* Estilos de cada tarjeta */
+.card {
+    background-color: #f9f9f9; /* Fondo gris claro para las tarjetas */
+    border: 1px solid #ddd; /* Borde gris claro de 1px para definir los límites */
+    border-radius: 8px; /* Bordes redondeados de 8px para un diseño suave */
+    padding: 1.5rem; /* Espacio interior de 1.5rem (24px) */
+    text-align: center; /* Centra el contenido dentro de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad (0px horizontal, 2px vertical, 5px desenfoque, color con 10% opacidad) */
+}
+
+/* Estilos del título dentro de las tarjetas */
+.card h2 {
+    margin-bottom: 1rem; /* Espacio de 1rem (16px) debajo del título */
+    font-size: clamp(1.2rem, 4vw, 1.4rem); /* Tamaño adaptable: mínimo 1.2rem (19.2px), preferido 4% del ancho de la pantalla, máximo 1.4rem (22.4px) */
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #2c3e50; /* Fondo azul oscuro, igual que el encabezado */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 1rem; /* Espacio interior de 1rem (16px) */
+    font-size: clamp(0.8rem, 3vw, 1rem); /* Tamaño adaptable: mínimo 0.8rem (12.8px), preferido 3% del ancho de la pantalla, máximo 1rem (16px) */
+}

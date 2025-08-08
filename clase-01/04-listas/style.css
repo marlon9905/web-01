@@ -1,36 +1,56 @@
-
 /* Estilos para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif; /* Fuente legible y ampliamente soportada */
-    margin: 20px; /* Margen exterior para evitar que el contenido toque los bordes */
-    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
 }
 
-/* Estilos para encabezados */
-h1, h2 {
-    color: #333; /* Color oscuro para contraste */
+/* Estilos para los encabezados */
+h1 {
+    color: #2c3e50;
+    text-align: center;
 }
 
-/* Estilos para la etiqueta <code> usada en explicaciones */
+h2 {
+    color: #34495e;
+}
+
+/* Estilos para las etiquetas de código */
 code {
-    background-color: #f4f4f4; /* Fondo claro para resaltar código */
-    padding: 2px 4px; /* Espaciado interno */
-    border-radius: 3px; /* Bordes redondeados para un aspecto moderno */
+    background-color: #ecf0f1;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
-/* Estilos para listas */
+/* Estilos para las listas */
 ul, ol {
-    margin: 10px 0; /* Margen vertical para separar listas del texto */
-    padding-left: 30px; /* Indentación para viñetas o números */
+    margin: 10px 0;
+    padding-left: 30px;
 }
 
-/* Estilo para listas anidadas */
-ul ul, ol ol, ul ol, ol ul {
-    margin-top: 5px; /* Margen superior para listas anidadas */
-    margin-bottom: 5px; /* Margen inferior para listas anidadas */
+/* Estilos para las listas anidadas */
+ul ul, ol ol {
+    margin: 5px 0;
+    padding-left: 20px;
 }
 
-/* Estilo opcional para una lista desordenada personalizada con CSS */
-ul.custom-list {
-    list-style-type: square; /* Viñetas cuadradas usando CSS (mejor que el atributo type) */
+/* Efecto hover en los elementos de lista */
+/* 
+Cómo explicarlo en clase
+
+li:hover → significa “cuando el cursor pasa por encima del elemento <li>”.
+
+background-color → cambia el color de fondo.
+
+color → cambia el color del texto.
+
+*/
+
+
+
+li:hover {
+    background-color: #3498db; /* Azul de ejemplo */
+    color: #fff;              /* Texto en blanco */
+    transform: translateX(5px); /* Un pequeño desplazamiento hacia la derecha */
+    cursor: pointer;              /* Color del texto al pasar el cursor */
 }

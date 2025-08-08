@@ -1,0 +1,30 @@
+body {
+    background-color: lightyellow; /* color por nombre */
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* Colores por nombre */
+#nombre p {
+    color: blue;
+}
+
+/* Colores con RGB/RGBA */
+#rgb p {
+    color: rgb(255, 0, 0);
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+/* Colores con HEX */
+#hex p {
+    color: #ff00ff;
+    background-color: #cccccc;
+}
+
+/* Hover */
+p:hover {
+    color: red;
+}

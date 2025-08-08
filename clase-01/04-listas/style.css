@@ -1,0 +1,36 @@
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente legible y ampliamente soportada */
+    margin: 20px; /* Margen exterior para evitar que el contenido toque los bordes */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+
+/* Estilos para encabezados */
+h1, h2 {
+    color: #333; /* Color oscuro para contraste */
+}
+
+/* Estilos para la etiqueta <code> usada en explicaciones */
+code {
+    background-color: #f4f4f4; /* Fondo claro para resaltar código */
+    padding: 2px 4px; /* Espaciado interno */
+    border-radius: 3px; /* Bordes redondeados para un aspecto moderno */
+}
+
+/* Estilos para listas */
+ul, ol {
+    margin: 10px 0; /* Margen vertical para separar listas del texto */
+    padding-left: 30px; /* Indentación para viñetas o números */
+}
+
+/* Estilo para listas anidadas */
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 5px; /* Margen superior para listas anidadas */
+    margin-bottom: 5px; /* Margen inferior para listas anidadas */
+}
+
+/* Estilo opcional para una lista desordenada personalizada con CSS */
+ul.custom-list {
+    list-style-type: square; /* Viñetas cuadradas usando CSS (mejor que el atributo type) */
+}

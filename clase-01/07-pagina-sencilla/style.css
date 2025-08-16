@@ -1,37 +1,57 @@
 body {
-      margin: 0; /* Quita el margen por defecto del navegador */
-      font-family: Arial, sans-serif; /* Establece la fuente del texto */
-    }
+  margin: 0;
+  /* Quita el margen por defecto del navegador */
+  font-family: Arial, sans-serif;
+  /* Establece la fuente del texto */
+}
 
-    header {
-      background-color: #4CAF50; /* Color de fondo verde */
-      color: white; /* Texto en blanco */
-      padding: 20px; /* Espaciado interno */
-      text-align: center; /* Centra el contenido del header */
-    }
+header {
+  background-color: #4CAF50;
+  /* Color de fondo verde */
+  color: white;
+  /* Texto en blanco */
+  padding: 20px;
+  /* Espaciado interno */
+  text-align: center;
+  /* Centra el contenido del header */
+}
 
-    main {
-      display: flex; /* Usa Flexbox para colocar los hijos (aside y section) en línea */
-      min-height: 400px; /* Altura mínima para el contenido principal */
-    }
+main {
+  display: flex;
+  /* Usa Flexbox para colocar los hijos (aside y section) en línea */
+  min-height: 400px;
+  /* Altura mínima para el contenido principal */
+}
 
-    aside {
-      background-color: #f4f4f4; /* Color de fondo gris claro */
-      width: 25%; /* Ocupa el 25% del ancho de la pantalla */
-      padding: 20px; /* Espaciado interno */
-      border-right: 1px solid #ccc; /* Línea divisoria con el contenido */
-    }
+aside {
+  background-color: #f4f4f4;
+  /* Color de fondo gris claro */
+  width: 25%;
+  /* Ocupa el 25% del ancho de la pantalla */
+  padding: 20px;
+  /* Espaciado interno */
+  border-right: 1px solid #ccc;
+  /* Línea divisoria con el contenido */
+}
 
-    section {
-      background-color: #fff; /* Fondo blanco */
-      width: 75%; /* Ocupa el 75% restante del ancho */
-      padding: 20px; /* Espaciado interno */
-    }
+section {
+  background-color: #fff;
+  /* Fondo blanco */
+  width: 75%;
+  /* Ocupa el 75% restante del ancho */
+  padding: 20px;
+  /* Espaciado interno */
+}
 
-    footer {
-      background-color: #333; /* Fondo gris oscuro */
-      color: white; /* Texto en blanco */
-      text-align: center; /* Centra el contenido */
-      padding: 15px; /* Espaciado interno */
-      margin-top: 30px; /* Separación del contenido anterior */
-    }
+footer {
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: white;
+  /* Texto en blanco */
+  text-align: center;
+  /* Centra el contenido */
+  padding: 15px;
+  /* Espaciado interno */
+  margin-top: 30px;
+  /* Separación del contenido anterior */
+}

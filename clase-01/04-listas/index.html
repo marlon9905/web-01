@@ -1,119 +1,173 @@
 <!DOCTYPE html>
-<!-- Declara que el documento es HTML5, asegurando compatibilidad con navegadores modernos -->
 <html lang="es">
-<!-- Define el idioma del documento como español para mejorar accesibilidad y SEO -->
 
 <head>
-    <!-- Conjunto de metadatos y enlaces para configurar la página -->
     <meta charset="UTF-8">
-    <!-- Especifica la codificación de caracteres para soportar tildes y caracteres especiales -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hace que la página sea responsive en dispositivos móviles -->
-    <title>Ejemplo de Listas HTML</title>
-    <!-- Título de la página, visible en la pestaña del navegador -->
-    <link rel="stylesheet" href="/04-listas/style.css">
-    <!-- Enlaza el archivo CSS externo para los estilos -->
+    <title>Listas en HTML - Grado 10</title>
+    <!-- Aquí conectamos el archivo CSS -->
+    <link rel="stylesheet" href="/web-01/clase-01/04-listas/style.css">
 </head>
 
 <body>
-    <!-- Contenedor principal del contenido visible de la página -->
-    <h1>Ejemplo de Listas HTML</h1>
-    <!-- Encabezado principal que describe el propósito de la página -->
-    <p>En HTML, las listas permiten organizar información de manera estructurada. Hay dos tipos principales: <strong>listas desordenadas</strong> (con viñetas) y <strong>listas ordenadas</strong> (con números o letras).</p>
-    <!-- Párrafo introductorio que explica qué son las listas; <strong> resalta términos clave -->
+    <!-- SECCIÓN DEL ENCABEZADO -->
+    <div class="encabezado">
+        <h1>Listas en HTML</h1>
+        <p>Aprende los 3 tipos de listas básicas</p>
+    </div>
 
-    <!-- Sección: Lista desordenada -->
-    <section>
-        <!-- Etiqueta semántica para agrupar contenido relacionado -->
-        <h2>Lista Desordenada (<code>&lt;ul&gt;</code>)</h2>
-        <!-- Subtítulo que describe la lista desordenada; <code> muestra etiquetas HTML -->
-        <p>Una lista desordenada comienza con la etiqueta <code>&lt;ul&gt;</code> (unordered list). Cada elemento de la lista se define con <code>&lt;li&gt;</code> (list item). Por defecto, los elementos se marcan con viñetas circulares.</p>
-        <!-- Explicación visible en la página para el usuario -->
-        <ul>
-            <!-- Lista desordenada con viñetas predeterminadas -->
-            <li>Elemento 1</li>
-            <!-- Elemento de la lista -->
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-        </ul>
-    </section>
+    <!-- SECCIÓN DE LISTAS NO ORDENADAS -->
+    <div class="seccion-ul">
+        <h2>1. Lista Sin Orden (ul)</h2>
+        <p>Se usa cuando el orden NO importa</p>
 
-    <!-- Sección: Lista desordenada con atributo type -->
-    <section>
-        <h2>Lista Desordenada con Diferentes Viñetas</h2>
-        <p>El atributo <code>type</code> en <code>&lt;ul&gt;</code> permite cambiar el estilo de las viñetas: <code>disc</code> (predeterminado), <code>circle</code> (círculo hueco) o <code>square</code> (cuadrado). Nota: Este atributo está obsoleto en HTML5; se recomienda usar CSS para estilos personalizados.</p>
-        <!-- Explicación sobre el atributo type y su obsolescencia -->
-        <ul type="square">
-            <!-- Lista desordenada con viñetas cuadradas (atributo obsoleto, mostrado como ejemplo educativo) -->
-            <li>Elemento con viñeta cuadrada</li>
-            <li>Otro elemento</li>
-        </ul>
-    </section>
-
-    <!-- Sección: Lista ordenada -->
-    <section>
-        <h2>Lista Ordenada (<code>&lt;ol&gt;</code>)</h2>
-        <p>Una lista ordenada comienza con la etiqueta <code>&lt;ol&gt;</code> (ordered list). Cada elemento se define con <code>&lt;li&gt;</code>. Por defecto, los elementos se numeran con números (1, 2, 3...).</p>
-        <ol>
-            <!-- Lista ordenada con numeración predeterminada -->
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ol>
-    </section>
-
-    <!-- Sección: Lista ordenada con atributo type -->
-    <section>
-        <h2>Lista Ordenada con Diferente Numeración</h2>
-        <p>El atributo <code>type</code> en <code>&lt;ol&gt;</code> permite cambiar el tipo de numeración: <code>1</code> (números, predeterminado), <code>A</code> (letras mayúsculas), <code>a</code> (letras minúsculas), <code>I</code> (números romanos mayúsculos), o <code>i</code> (números romanos minúsculos). También está obsoleto en HTML5; usa CSS en su lugar.</p>
-        <ol type="A">
-            <!-- Lista ordenada con letras mayúsculas -->
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-        </ol>
-    </section>
-
-    <!-- Sección: Lista anidada -->
-    <section>
-        <h2>Lista Anidada</h2>
-        <p>Las listas pueden anidarse colocando una lista dentro de un elemento <code>&lt;li&gt;</code>. Esto es útil para crear subniveles de información, como categorías y subcategorías.</p>
-        <ul>
-            <!-- Lista desordenada principal -->
-            <li>Frutas
-                <!-- Elemento con una lista anidada -->
-                <ul>
-                    <!-- Lista desordenada anidada -->
-                    <li>Manzana</li>
-                    <li>Naranja</li>
+        <div class="ejemplo">
+            <p><strong>Código:</strong></p>
+            <div class="codigo">
+                <ul> <!-- Esta etiqueta abre la lista sin orden -->
+                    <li>Manzana</li> <!-- Cada li es un elemento de la lista -->
                     <li>Banana</li>
+                    <li>Naranja</li>
+                </ul> <!-- Esta etiqueta cierra la lista -->
+            </div>
+
+            <p><strong>Se ve así:</strong></p>
+            <div class="resultado">
+                <ul>
+                    <li>Manzana</li>
+                    <li>Banana</li>
+                    <li>Naranja</li>
                 </ul>
-            </li>
-            <li>Bebidas
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE LISTAS ORDENADAS -->
+    <div class="seccion-ol">
+        <h2>2. Lista Con Orden (ol)</h2>
+        <p>Se usa cuando el orden SÍ importa</p>
+
+        <div class="ejemplo">
+            <p><strong>Código:</strong></p>
+            <div class="codigo">
+                <ol> <!-- Esta etiqueta abre la lista CON orden -->
+                    <li>Despertar</li> <!-- li siempre va dentro de ul o ol -->
+                    <li>Bañarse</li>
+                    <li>Desayunar</li>
+                </ol> <!-- Siempre cerrar la etiqueta ol -->
+            </div>
+
+            <p><strong>Se ve así:</strong></p>
+            <div class="resultado">
                 <ol>
-                    <!-- Lista ordenada anidada -->
-                    <li>Agua</li>
-                    <li>Jugo</li>
+                    <li>Despertar</li>
+                    <li>Bañarse</li>
+                    <li>Desayunar</li>
                 </ol>
-            </li>
-        </ul>
-    </section>
+            </div>
+        </div>
+    </div>
 
-    <!-- Sección: Buenas prácticas y cosas a tener en cuenta -->
-    <!--
-        Buenas prácticas para listas HTML:
-        1. Usa etiquetas semánticas como <section> para agrupar contenido relacionado.
-        2. Evita atributos obsoletos como `type` en HTML5; usa CSS para personalizar estilos (ejemplo: list-style-type).
-        3. Asegúrate de cerrar correctamente todas las etiquetas <li>, <ul>, y <ol> para evitar errores de renderizado.
-        4. Usa listas anidadas solo cuando sea necesario para mantener la claridad.
-        5. Para accesibilidad, considera usar el atributo `role="list"` en listas estilizadas con CSS que puedan perder su semántica.
-        6. Prueba la página en diferentes navegadores para asegurar compatibilidad.
+    <!-- SECCIÓN DE LISTAS ANIDADAS -->
+    <div class="seccion-anidadas">
+        <h2>3. Listas Dentro de Listas</h2>
+        <p>Puedes poner una lista dentro de otra lista</p>
 
-        Cosas a tener en cuenta:
-        - Las listas anidadas aumentan la indentación en el renderizado; usa CSS para controlar márgenes y espaciado.
-        - Evita colocar contenido no relacionado (como párrafos o encabezados) dentro de <ul> o <ol>, ya que solo deben contener <li>.
-        - Si usas CSS para eliminar viñetas o numeración (list-style: none), asegúrate de que la lista siga siendo comprensible.
-        - Para listas muy largas, considera usar paginación o scroll para mejorar la experiencia del usuario.
-    -->
+        <div class="ejemplo">
+            <p><strong>Código:</strong></p>
+            <div class="codigo">
+                <ul> <!-- Lista principal -->
+                    <li>Deportes</li> <!-- Elemento principal -->
+                    <ul> <!-- Lista secundaria DENTRO de la principal -->
+                        <li>Fútbol</li> <!-- Sub-elemento -->
+                        <li>Baloncesto</li>
+                    </ul> <!-- Cerrar lista secundaria -->
+                    <li>Música</li> <!-- Otro elemento principal -->
+                    <ul> <!-- Otra lista secundaria -->
+                        <li>Rock</li>
+                        <li>Pop</li>
+                    </ul>
+                </ul> <!-- Cerrar lista principal -->
+            </div>
+
+            <p><strong>Se ve así:</strong></p>
+            <div class="resultado">
+                <ul>
+                    <li>Deportes</li>
+                    <ul>
+                        <li>Fútbol</li>
+                        <li>Baloncesto</li>
+                    </ul>
+                    <li>Música</li>
+                    <ul>
+                        <li>Rock</li>
+                        <li>Pop</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE ESTILOS CSS -->
+    <div class="seccion-css">
+        <h2>Cambiar el estilo con CSS</h2>
+
+        <!-- Ejemplo 1: Cambiar bolitas -->
+        <div class="ejemplo-css">
+            <h3>Cambiar las bolitas de ul:</h3>
+            <div class="codigo">
+                ul { /* ul es el selector para listas sin orden */
+                list-style-type: square; /* Cambia las bolitas por cuadrados */
+                }
+            </div>
+            <div class="resultado">
+                <ul style="list-style-type: square;">
+                    <li>Ahora son cuadrados</li>
+                    <li>En vez de círculos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ejemplo 2: Cambiar números -->
+        <div class="ejemplo-css">
+            <h3>Cambiar los números de ol:</h3>
+            <div class="codigo">
+                ol { /* ol es el selector para listas con orden */
+                list-style-type: lower-alpha; /* Cambia números por letras */
+                }
+            </div>
+            <div class="resultado">
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Ahora son letras</li>
+                    <li>En vez de números</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE RESUMEN -->
+    <div class="seccion-resumen">
+        <div class="importante">
+            <h3>Para recordar:</h3>
+            <ul>
+                <li><strong>ul</strong> = lista SIN orden (con bolitas)</li>
+                <li><strong>ol</strong> = lista CON orden (con números)</li>
+                <li><strong>li</strong> = cada elemento de la lista</li>
+                <li>Puedes poner listas dentro de otras listas</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE EJERCICIOS -->
+    <div class="seccion-ejercicios">
+        <h2>Ejercicios para practicar:</h2>
+        <div class="ejercicio">
+            <p><strong>Ejercicio 1:</strong> Haz una lista ul con 4 colores que te gusten</p>
+        </div>
+        <div class="ejercicio">
+            <p><strong>Ejercicio 2:</strong> Haz una lista ol con los pasos para lavarte los dientes</p>
+        </div>
+    </div>
+
 </body>
+
 </html>

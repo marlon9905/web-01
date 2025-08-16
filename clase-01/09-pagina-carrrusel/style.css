@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+/* Encabezado */
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Carrusel */
+.carousel {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+.carousel-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+.carousel-buttons button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    margin: 3px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.carousel-buttons button.active {
+    background-color: #0d6efd;
+}
+
+/* Galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Mensaje importante */
+.important {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Taller: Listas con Estilo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+        }
+        
+        .titulo-taller {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .instruccion {
+            background-color: #e8f5e8;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid green;
+            border-radius: 5px;
+        }
+        
+        .codigo-ejemplo {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-family: Courier, monospace;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        
+        .ejercicio {
+            background-color: #fff3cd;
+            padding: 20px;
+            margin: 25px 0;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+        }
+        
+        .reto {
+            background-color: #f8d7da;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #dc3545;
+            border-radius: 10px;
+        }
+        
+        .checklist {
+            background-color: #d1ecf1;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #17a2b8;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            color: #13c03e;
+        }
+        
+        h3 {
+            color: #e74c3c;
+        }
+        
+        .paso {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: white;
+            border-left: 3px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo-taller">
+        <h1>📝 Taller Práctico: Listas con Estilo</h1>
+        <p>Combina listas HTML con colores, encabezados y efectos hover</p>
+    </div>
+
+    <div class="instruccion">
+        <h2>📋 Instrucciones Generales:</h2>
+        <p><strong>Objetivo:</strong> Crear una página web personal usando listas HTML con efectos CSS.</p>
+        <p><strong>Tiempo:</strong> 40 minutos</p>
+        <p><strong>Archivos a crear:</strong> mi-pagina.html y mi-estilo.css</p>
+    </div>
+
+    <!-- EJERCICIO 1 -->
+    <div class="ejercicio">
+        <h2>🏠 Ejercicio 1: Crear el archivo HTML</h2>
+        <p><strong>Crea un archivo llamado "mi-pagina.html" con este código:</strong></p>
+        
+        <div class="codigo-ejemplo">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi Página Personal&lt;/title&gt;
+    &lt;link rel="stylesheet" href="mi-estilo.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="encabezado"&gt;
+        &lt;h1&gt;Mi Página Personal&lt;/h1&gt;
+        &lt;h2&gt;Estudiante de Grado 10&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div class="seccion"&gt;
+        &lt;h2&gt;Mis Materias Favoritas&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;[Escribe aquí tu materia favorita]&lt;/li&gt;
+            &lt;li&gt;[Segunda materia]&lt;/li&gt;
+            &lt;li&gt;[Tercera materia]&lt;/li&gt;
+            &lt;li&gt;[Cuarta materia]&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class="seccion"&gt;
+        &lt;h2&gt;Mi Rutina Diaria&lt;/h2&gt;
+        &lt;ol&gt;
+            &lt;li&gt;[Primer paso de tu rutina]&lt;/li&gt;
+            &lt;li&gt;[Segundo paso]&lt;/li&gt;
+            &lt;li&gt;[Tercer paso]&lt;/li&gt;
+            &lt;li&gt;[Cuarto paso]&lt;/li&gt;
+            &lt;li&gt;[Quinto paso]&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;div class="seccion"&gt;
+        &lt;h2&gt;Mis Colores Favoritos&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;[Color favorito 1]&lt;/li&gt;
+            &lt;li&gt;[Color favorito 2]&lt;/li&gt;
+            &lt;li&gt;[Color favorito 3]&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </div>
+        
+        <div class="paso">
+            <strong>📝 Tu tarea:</strong> Reemplaza todo lo que está entre [ ] con tu información personal.
+        </div>
+    </div>
+
+    <!-- EJERCICIO 2 -->
+    <div class="ejercicio">
+        <h2>🎨 Ejercicio 2: Crear el archivo CSS</h2>
+        <p><strong>Crea un archivo llamado "mi-estilo.css" con este código:</strong></p>
+        
+        <div class="codigo-ejemplo">
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: lightblue;  /* Cambia por tu color favorito */
+}
+
+/* Estilo del encabezado */
+.encabezado {
+    text-align: center;
+    background-color: darkblue;  /* Cambia por tu color favorito */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo de las secciones */
+.seccion {
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid green;  /* Cambia el color del borde */
+    background-color: lightyellow;  /* Cambia el fondo */
+    border-radius: 10px;
+}
+
+/* Efecto hover en las listas */
+li:hover {
+    background-color: orange;  /* Color cuando pases el mouse */
+    color: white;  /* Color del texto al hacer hover */
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Efecto hover en los títulos h2 */
+h2:hover {
+    color: red;  /* Cambia el color */
+    font-size: 25px;  /* Se hace más grande */
+}
+        </div>
+        
+        <div class="paso">
+            <strong>🎯 Tu tarea:</strong> Cambia todos los colores por los que más te gusten.
+        </div>
+    </div>
+
+    <!-- EJERCICIO 3 -->
+    <div class="ejercicio">
+        <h2>✨ Ejercicio 3: Personalización Avanzada</h2>
+        <p><strong>Agrega este código al final de tu archivo CSS:</strong></p>
+        
+        <div class="codigo-ejemplo">
+/* Cambiar viñetas de la primera lista */
+.seccion:nth-child(2) ul {
+    list-style-type: square;  /* Prueba: circle, square, none */
+}
+
+/* Cambiar viñetas de la tercera lista */
+.seccion:nth-child(4) ul {
+    list-style-type: circle;  /* Prueba diferentes tipos */
+}
+
+/* Cambiar números de la lista ordenada */
+.seccion:nth-child(3) ol {
+    list-style-type: lower-roman;  /* Números romanos */
+}
+
+/* Animación suave */
+li {
+    transition: all 0.3s;  /* Hace el hover más suave */
+    padding: 5px;
+    margin: 3px 0;
+}
+
+/* Efecto especial en el título principal */
+h1:hover {
+    transform: scale(1.1);  /* Se hace más grande */
+    transition: all 0.5s;
+}
+        </div>
+    </div>
+
+    <!-- RETO EXTRA -->
+    <div class="reto">
+        <h2>🏆 Reto Extra (Si terminas rápido)</h2>
+        <p><strong>Agrega una cuarta sección a tu HTML:</strong></p>
+        
+        <div class="codigo-ejemplo">
+&lt;div class="seccion"&gt;
+    &lt;h2&gt;Mis Hobbies&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;[Tu hobby favorito]&lt;/li&gt;
+        &lt;li&gt;[Segundo hobby]&lt;/li&gt;
+        &lt;li&gt;[Tercer hobby]&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+        </div>
+        
+        <p><strong>Y este CSS especial para los hobbies:</strong></p>
+        <div class="codigo-ejemplo">
+.seccion:nth-child(5) li:hover {
+    background-color: hotpink;
+    transform: rotate(2deg);  /* Rota un poquito */
+    font-weight: bold;
+}
+        </div>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="checklist">
+        <h2>📋 Lista de Verificación</h2>
+        <p><strong>Antes de entregar, verifica que tienes:</strong></p>
+        <ul>
+            <li>✅ Archivo mi-pagina.html completo</li>
+            <li>✅ Archivo mi-estilo.css completo</li>
+            <li>✅ Información personal en todas las listas</li>
+            <li>✅ Al menos 3 colores diferentes</li>
+            <li>✅ Efecto hover funcionando en las listas</li>
+            <li>✅ Efecto hover funcionando en los títulos h2</li>
+            <li>✅ Diferentes tipos de viñetas/números</li>
+            <li>✅ La página se ve bien en el navegador</li>
+        </ul>
+    </div>
+
+    <!-- TIPS -->
+    <div class="instruccion">
+        <h2>💡 Tips para el éxito:</h2>
+        <ul>
+            <li><strong>Guarda frecuentemente:</strong> Ctrl+S en ambos archivos</li>
+            <li><strong>Prueba en el navegador:</strong> Abre mi-pagina.html cada vez que hagas cambios</li>
+            <li><strong>Experimenta con colores:</strong> red, blue, green, purple, orange, pink, yellow</li>
+            <li><strong>Sé creativo:</strong> Esta es TU página personal</li>
+            <li><strong>Pide ayuda:</strong> Si algo no funciona, levanta la mano</li>
+        </ul>
+    </div>
+
+    <div class="titulo-taller">
+        <h2> ¡Diviértete creando tu página personal! 🚀</h2>
+        <p>Tiempo estimado: 40 minutos</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+    body {
+        font-family: Arial, sans-serif;  /* Fuente general */
+        background-color: #f0f0f0;  /* Fondo gris claro */
+    }
+    
+    #cabecera {
+        background-color: #007bff;  /* Azul */
+        color: white;  /* Texto blanco */
+        text-align: center;  /* Centrado */
+        padding: 20px;  /* Espacio interno */
+    }
+    
+    .contenido {
+        border: 1px solid black;  /* Borde negro */
+        margin: 10px;  /* Espacio externo */
+        padding: 15px;  /* Espacio interno */
+        background-color: white;  /* Fondo blanco */
+    }
+    
+    footer {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    img {
+        width: 200px;  /* Tamaño fijo */
+        border-radius: 10px;  /* Bordes redondeados */
+    }
+    
+    a {
+        color: red;  /* Color de enlaces */
+        text-decoration: none;  /* Sin subrayado */
+    }

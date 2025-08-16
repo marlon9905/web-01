@@ -1,0 +1,28 @@
+/* CSS simple para listas */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.encabezado {
+    text-align: center;
+    color: blue;
+}
+
+.seccion {
+    margin: 20px 0;  /* Espacio entre secciones */
+    padding: 15px;   /* Espacio interior */
+    border: 1px solid gray;  /* Borde */
+}
+
+.codigo {
+    background-color: #f0f0f0;  /* Fondo gris */
+    padding: 10px;
+    font-family: Courier;  /* Letra de código */
+}
+
+.resultado {
+    background-color: #ffffcc;  /* Fondo amarillo */
+    padding: 10px;
+}

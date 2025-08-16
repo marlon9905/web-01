@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Estructura Organizada</title>
+    <link rel="stylesheet" href="/web-01/clase-01/10-etiquetas HTML/style.css">
+</head>
+<body>
+    <header id="cabecera" class="fondo-principal">  <!-- Sección superior, con id y class -->
+        <h1>Mi Página Organizada</h1>
+    </header>
+    
+    <main>  <!-- Contenido principal -->
+        <section id="intro" title="Sección de introducción">  <!-- Atributo title para tooltip -->
+            <h2>Introducción</h2>
+            <p>Bienvenido. Aquí va texto.</p>
+            <img src="https://assets.grok.com/users/faa87b74-c9cd-48d2-953b-1094b6e2a615/generated/b993bc67-e04a-4f8a-ac49-9d62b795e750/image.jpg" alt="Intro imagen">
+        </section>
+        
+        <article class="contenido">  <!-- Artículo independiente -->
+            <h3>Artículo Principal</h3>
+            <p>Detalles aquí. <a href="#cabecera">Volver arriba</a></p>  <!-- Enlace interno con #id -->
+            <a href="https://www.google.com">Visita Google</a>
+            <ul>
+                <li> Punto 1</li>
+                <li> Punto 2</li>
+            </ul>
+        </article>
+        
+        <aside>  <!-- Contenido lateral -->
+            <p>Información extra, como un sidebar.</p>
+        </aside>
+    </main>
+    
+    <footer class="pie-pagina">  <!-- Pie de página -->
+        <p>Derechos reservados © 2025</p>
+    </footer>
+</body>
+</html>

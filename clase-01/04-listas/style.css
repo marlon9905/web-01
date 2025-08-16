@@ -1,56 +1,121 @@
-/* Estilos para el cuerpo de la página */
+/* Archivo CSS para dar estilo a la página de listas */
+
+/* ========== ESTILOS GENERALES ========== */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;  /* Tipo de letra */
+    margin: 20px;  /* Espacio alrededor de la página */
+    background-color: white;  /* Color de fondo */
 }
 
-/* Estilos para los encabezados */
 h1 {
-    color: #2c3e50;
-    text-align: center;
+    color: blue;  /* Color del texto */
+    text-align: center;  /* Centrar el texto */
 }
 
 h2 {
-    color: #34495e;
+    color: green;  /* Color verde para los subtítulos */
 }
 
-/* Estilos para las etiquetas de código */
-code {
-    background-color: #ecf0f1;
-    padding: 2px 4px;
-    border-radius: 3px;
+/* ========== ESTILOS PARA SECCIONES ========== */
+
+/* Estilo para el encabezado */
+.encabezado {
+    text-align: center;  /* Centrar todo el contenido */
+    margin-bottom: 30px;  /* Espacio debajo */
+    padding: 20px;  /* Espacio interior */
+    border-bottom: 2px solid blue;  /* Línea azul debajo */
 }
 
-/* Estilos para las listas */
-ul, ol {
-    margin: 10px 0;
-    padding-left: 30px;
+/* Estilo para cada sección principal */
+.seccion-ul, .seccion-ol, .seccion-anidadas, .seccion-css {
+    margin-bottom: 40px;  /* Espacio entre secciones */
+    padding: 20px;  /* Espacio interior */
+    border: 1px solid #ddd;  /* Borde gris claro */
+    border-radius: 5px;  /* Esquinas redondeadas */
 }
 
-/* Estilos para las listas anidadas */
-ul ul, ol ol {
-    margin: 5px 0;
-    padding-left: 20px;
+/* Estilo para ejemplos dentro de las secciones */
+.ejemplo, .ejemplo-css {
+    margin: 20px 0;  /* Espacio arriba y abajo */
+    padding: 15px;  /* Espacio interior */
+    background-color: #f9f9f9;  /* Fondo gris muy claro */
+    border-left: 3px solid green;  /* Línea verde a la izquierda */
 }
 
-/* Efecto hover en los elementos de lista */
-/* 
-Cómo explicarlo en clase
+/* ========== ESTILOS PARA CAJAS DE CONTENIDO ========== */
 
-li:hover → significa “cuando el cursor pasa por encima del elemento <li>”.
+/* Estilo para las cajas de código */
+.codigo {
+    background-color: #f0f0f0;  /* Color de fondo gris claro */
+    padding: 10px;  /* Espacio interior */
+    border: 1px solid gray;  /* Borde gris */
+    font-family: Courier;  /* Letra tipo máquina de escribir */
+    margin: 10px 0;  /* Espacio arriba y abajo */
+}
 
-background-color → cambia el color de fondo.
+/* Estilo para las cajas de resultado */
+.resultado {
+    background-color: #ffffcc;  /* Color de fondo amarillo claro */
+    padding: 10px;  /* Espacio interior */
+    border: 1px solid orange;  /* Borde naranja */
+    margin: 10px 0;  /* Espacio arriba y abajo */
+}
 
-color → cambia el color del texto.
+/* Estilo para la caja importante */
+.importante {
+    background-color: #ffeeee;  /* Color de fondo rosa claro */
+    padding: 15px;  /* Espacio interior */
+    border: 2px solid red;  /* Borde rojo más grueso */
+    border-radius: 5px;  /* Esquinas redondeadas */
+}
 
-*/
+/* ========== ESTILOS PARA SECCIONES ESPECÍFICAS ========== */
 
+/* Estilo para la sección de resumen */
+.seccion-resumen {
+    margin: 30px 0;  /* Espacio arriba y abajo */
+    padding: 20px;  /* Espacio interior */
+}
 
+/* Estilo para la sección de ejercicios */
+.seccion-ejercicios {
+    background-color: #f0f8ff;  /* Fondo azul muy claro */
+    padding: 20px;  /* Espacio interior */
+    border: 2px solid blue;  /* Borde azul */
+    border-radius: 10px;  /* Esquinas más redondeadas */
+}
 
-li:hover {
-    background-color: #3498db; /* Azul de ejemplo */
-    color: #fff;              /* Texto en blanco */
-    transform: translateX(5px); /* Un pequeño desplazamiento hacia la derecha */
-    cursor: pointer;              /* Color del texto al pasar el cursor */
+/* Estilo para cada ejercicio individual */
+.ejercicio {
+    background-color: white;  /* Fondo blanco */
+    padding: 10px;  /* Espacio interior */
+    margin: 10px 0;  /* Espacio arriba y abajo */
+    border-left: 4px solid blue;  /* Línea azul a la izquierda */
+}
+
+/* ========== EJEMPLOS DE ESTILOS PARA LISTAS ========== */
+
+/* Cambiar las bolitas de ul por cuadrados */
+ul.cuadrados {
+    list-style-type: square;
+}
+
+/* Cambiar las bolitas de ul por círculos */
+ul.circulos {
+    list-style-type: circle;
+}
+
+/* Quitar las bolitas de ul */
+ul.sin-bolitas {
+    list-style-type: none;
+}
+
+/* Cambiar los números de ol por letras */
+ol.letras {
+    list-style-type: lower-alpha;
+}
+
+/* Cambiar los números de ol por números romanos */
+ol.romanos {
+    list-style-type: lower-roman;
 }

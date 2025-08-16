@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Escolar</title>
+    <!-- Vinculamos el CSS -->
+    <link rel="stylesheet" href="/web-01/clase-01/09-pagina-carrrusel/style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Galería Escolar</h1>
+        <nav>
+            <!-- Menú con enlaces internos -->
+            <a href="#inicio">Inicio</a>
+            <a href="#galeria">Galería</a>
+            <a href="#importante">Importante</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN DEL CARRUSEL -->
+        <section id="inicio" class="carousel">
+            <!-- Imagen principal del carrusel -->
+            <img id="carousel-img" src="/web-01/clase-01/09-pagina-carrrusel/img/1.png" alt="Imagen carrusel">
+            
+            <!-- Botones para cambiar manualmente -->
+            <div class="carousel-buttons">
+                <button onclick="cambiarImagen(0)" class="active"></button>
+                <button onclick="cambiarImagen(1)"></button>
+                <button onclick="cambiarImagen(2)"></button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE GALERÍA -->
+        <section id="galeria">
+            <h2>Otras imágenes</h2>
+            <div class="gallery">
+                <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Clase en grupo">
+                <img src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Niños en clase">
+                <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Material escolar">
+                <img src="https://images.pexels.com/photos/4145354/pexels-photo-4145354.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Estudiantes trabajando">
+            </div>
+        </section>
+
+        <!-- SECCIÓN IMPORTANTE -->
+        <section id="importante">
+            <h2>Mensaje Importante</h2>
+            <div class="important">
+                La próxima semana realizaremos la <strong>Feria de Ciencias</strong> en el colegio. 
+                ¡Participa con tus ideas creativas y proyectos innovadores!
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        &copy; 2025 Galería Escolar - Todos los derechos reservados
+    </footer>
+
+    <!-- JAVASCRIPT BÁSICO SOLO PARA CAMBIAR IMÁGENES -->
+    <script>
+        // Lista de imágenes del carrusel
+        const imagenes = [
+            "https://images.pexels.com/photos/3184303/pexels-photo-3184303.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "https://images.pexels.com/photos/4144096/pexels-photo-4144096.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=800"
+        ];
+        let actual = 0;
+
+        function cambiarImagen(index) {
+            // Cambia la imagen del carrusel
+            document.getElementById("carousel-img").src = imagenes[index];
+            actual = index;
+
+            // Cambia la apariencia del botón activo
+            document.querySelectorAll(".carousel-buttons button").forEach((btn, i) => {
+                btn.classList.toggle("active", i === index);
+            });
+        }
+    </script>
+
+</body>
+</html>
